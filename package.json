@@ -1,0 +1,17 @@
+{
+  "name": "giocap",
+  "version": "1.0.0",
+  "description": "an external tool that builds a version portal for a single repository",
+  "main": "giocap.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "pipewriter",
+  "license": "ISC",
+  "dependencies": {
+    "shelljs": "^0.8.3"
+  },
+  "bin": {
+    "giocap": "./bin/giocap"
+  }
+}
