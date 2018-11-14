@@ -1,0 +1,35 @@
+{
+  "name": "giocap",
+  "version": "0.1.2",
+  "description": "an external tool that builds a version portal for a single repository",
+  "main": "giocap.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "pipewriter",
+  "license": "ISC",
+  "dependencies": {
+    "shelljs": "^0.8.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/pipewriter/giocap.git"
+  },
+  "keywords": [
+    "giocap",
+    "github",
+    "github io",
+    "io",
+    "pages",
+    "github pages",
+    "version",
+    "capture",
+    "utility",
+    "util",
+    "tool",
+    "executable"
+  ],
+  "bin": {
+    "giocap": "./bin/giocap"
+  }
+}
