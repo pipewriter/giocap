@@ -1,7 +1,7 @@
 # giocap
 an external tool that builds a version portal for a single repository
 
-# requirements
+## requirements
 Must have index.html file and **no** docs folder.
 
 ## to install
