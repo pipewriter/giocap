@@ -26,23 +26,24 @@ if(!fs.existsSync('docs')){
 const initialIndexText = 
 `
 <h1>giocap v${GIOCAP_VERSION}</h1>
-<h2>
-<a href="../index.html">Current Index File</a>
-</h2>
-<hr>`;
+<a href="https://www.npmjs.com/package/giocap">npm link</a>
+<br>
+<a href="https://github.com/pipewriter/giocap">github link</a>
+`;
 
 if(!fs.existsSync('docs/index.html')){
     console.log('no index file found, creating...');
     shelljs.ShellString(initialIndexText).to('docs/index.html');
 }
 
-const capFolderName = now.toISOString();
+// const capFolderName = now.toISOString();
+const capFolderName = now.valueOf();
 const capFolderPath = 'docs/' + capFolderName;
 fs.mkdirSync(capFolderPath);
 const files = fs.readdirSync('./');
 
 files.forEach((file) => {
-    if(file !== 'docs'){
+    if(file !== 'docs' && file !== '.git'){
         shelljs.cp('-R', file, capFolderPath + '/' + file);
     }
 });
@@ -56,4 +57,6 @@ const captureText =
 Captured on: <span style="color:blue;">${fancyDate}</span>
 <hr>`;
 
-shelljs.ShellString(captureText).toEnd('docs/index.html');
+const oldIndexFile = cat('docs/index.html');
+shelljs.ShellString(captureText).to('docs/index.html');
+oldIndexFile.toEnd('docs/index.html');
