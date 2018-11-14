@@ -11,6 +11,10 @@
   "dependencies": {
     "shelljs": "^0.8.3"
   },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/pipewriter/giocap.git"
+  },
   "keywords": [
     "giocap",
     "github",
@@ -22,7 +26,8 @@
     "capture",
     "utility",
     "util",
-    "tool"
+    "tool",
+    "executable"
   ],
   "bin": {
     "giocap": "./bin/giocap"
