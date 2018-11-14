@@ -1,6 +1,6 @@
 {
   "name": "giocap",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "an external tool that builds a version portal for a single repository",
   "main": "giocap.js",
   "scripts": {
@@ -11,6 +11,19 @@
   "dependencies": {
     "shelljs": "^0.8.3"
   },
+  "keywords": [
+    "giocap",
+    "github",
+    "github io",
+    "io",
+    "pages",
+    "github pages",
+    "version",
+    "capture",
+    "utility",
+    "util",
+    "tool"
+  ],
   "bin": {
     "giocap": "./bin/giocap"
   }

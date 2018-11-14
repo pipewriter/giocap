@@ -8,7 +8,7 @@ Must have index.html file and **no** docs folder.
 `npm install giocap -g`
 
 ## to run
-`giocap "My First Snapshot` 
+`giocap "My First Snapshot"` 
 
 ## results
 open `docs/index.html` to see your captures.
